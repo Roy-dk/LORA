@@ -1,0 +1,23 @@
+{
+  "name": "web2",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "vant": "^3.4.0",
+    "vue": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@vitejs/plugin-vue": "^2.0.1",
+    "@vue/compiler-sfc": "^3.0.4",
+    "vite": "^1.0.0-rc.13"
+  },
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

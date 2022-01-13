@@ -1,0 +1,28 @@
+version: '3'
+services:
+
+  web:
+    build: ./app
+    ports:
+      - "8000:8000"
+
+
+  socket:
+    build: ./tcp
+    ports:
+      - "8266:8266"
+
+  nginx:
+    depends_on:
+      - web
+    build: ./nginx
+    ports:
+      - 80:80
+
+  redis:
+    image: "redis"
+    volumes:
+      - ./redis/conf:/etc/redis/
+      - ./redis/data:/data
+      - ./redis/log/:/usr/local/redis/log/
+
